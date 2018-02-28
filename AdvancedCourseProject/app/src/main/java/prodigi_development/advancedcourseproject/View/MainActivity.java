@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i("LOG", CoreFacade.getInstance().StubMethod());
+        Log.i("LOG", CoreFacade.getShared().StubMethod());
     }
 }

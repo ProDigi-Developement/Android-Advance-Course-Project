@@ -12,7 +12,7 @@ public class CoreFacade {
         studentController = new StudentController();
     };
 
-    public static CoreFacade getInstance() {
+    public static CoreFacade getShared() {
         if (instance == null) {
             instance = new CoreFacade();
         }
