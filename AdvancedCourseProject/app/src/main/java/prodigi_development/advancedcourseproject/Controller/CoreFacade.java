@@ -18,4 +18,8 @@ public class CoreFacade {
         }
         return instance;
     }
+
+    public String StubMethod() {
+        return this.studentController.StubMethod();
+    }
 }
