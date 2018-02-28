@@ -6,8 +6,11 @@ package prodigi_development.advancedcourseproject.Controller;
 
 public class CoreFacade {
     private static CoreFacade instance = null;
-
-    private CoreFacade() {};
+    private StudentController studentController;
+    
+    private CoreFacade() {
+        studentController = new StudentController();
+    };
 
     public static CoreFacade getInstance() {
         if (instance == null) {
